@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nuvolapp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body class="p-4">
+    <h1>Nuvolapp</h1>
+    <h3>Enregistrer vos dépenses</h3>
+    <form id="expenseForm">
+      <input id="date" type="date">
+      <input id="amount" type="number" placeholder="Combien ?">
+      <select id="category">
+        <option>Cinema</option>
+        <option>Sport</option>
+        <option>Resto</option>
+      </select>
+      <select id="payment">
+        <option>Cash</option>
+        <option>CB</option>
+        <option>Chèque</option>
+      </select>
+      <input id="submit" type="submit" value="Ajouter" class="btn btn-primary btn-sm">
+      <input id="reset" type="button" value="Reset" class="btn btn-primary btn-sm">
+    </form>
+
+    <table class="table table-bordered table-striped mt-4">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Montant</th>
+          <th>Catégorie</th>
+          <th>Paiement</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tableExpenses"></tbody>
+    </table>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
