@@ -18,6 +18,7 @@ app.use(express.static('public'))
 app.use(bodyParser.json())
 
 // connection à mongodb
+// par défaut, le client mongoose se connecte sur le port 27017 (port écouté par le serveur mongodb)
 mongoose.connect('mongodb://localhost/nuvolapp', { useNewUrlParser: true })
 const db = mongoose.connection
 db.on('error', console.error.bind(console, '[-] connection to mongdb NOT OK'))
