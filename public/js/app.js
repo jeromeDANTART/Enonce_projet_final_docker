@@ -4,8 +4,7 @@ Author: Christophe DUFOUR
 
 (function() {
 
-  // remplacer l'ip/port par celle du server/cluster où est placé l'application back
-  const urlServer = 'http://192.168.1.49:4000/expense';
+  const urlServer = '/expense';
 
   // reférences au DOM
   const expenseForm = document.querySelector('#expenseForm');
