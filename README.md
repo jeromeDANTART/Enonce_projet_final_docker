@@ -11,3 +11,6 @@ Ces deux fichiers renvoyés au client constitue le *front*, c'est-à-dire l'inte
 
 L'application front est à l'écoute de certaines actions effectuées par l'utilisateur, comme le click sur bouton par exemple.  
 L'application est capable d'interroger, via des requêtes sur certaines routes (endpoints), la couche logique (serveur web) afin de lui faire exécuter des actions "côté back", comme par exemple, accéder à la base de données en lecture/écriture.
+
+## Notes
+[Demo de démarrage de l'application dans un env de dev](https://opusidea-training.s3.eu-west-3.amazonaws.com/divers/akka-devops/2022-02-21-projet-final-nuvolapp-test-dev.webm)
