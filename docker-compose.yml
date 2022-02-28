@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    image: nuvolapp:latest
+    ports:
+    - 4000:4000
+    environment:
+      - MONGO_HOST=mongo
+    # volumes:
+    #   - $PWD:/app
+  mongo:
+    image: mongo:4.4
