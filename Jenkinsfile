@@ -24,7 +24,6 @@ pipeline {
         }
         stage('Test image') {
             steps {
-                sh 'docker stop app'
                 sh 'docker run --rm -d --name app -p 4000:4000 opusidea/nuvolapp:latest'
                 sh 'sleep 10'
                 sh 'curl localhost:4000 | grep -i nuvolapp'
@@ -40,6 +39,11 @@ pipeline {
                     }
                 }
             }
+        }
+    }
+    post {
+        always {
+            sh 'docker stop app'
         }
     }
 }
